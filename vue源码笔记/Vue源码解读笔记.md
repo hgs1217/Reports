@@ -1503,7 +1503,9 @@ new Vue({
     y: 2
   },
   computed: {
-    total: () => this.x + this.y
+    total() {
+      return this.x + this.y;
+    }
   }
 })
 ```
